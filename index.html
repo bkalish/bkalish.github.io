@@ -3,12 +3,13 @@
 <head>
 <title>The Spinning Reel</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Lato:900|Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAStSURBVHic7ZtPiFVVHMc/v9SR/uAwLbKm6R+BbSoUypQgC2cgx4agZUFQIGUQJLTInUELF0WuauEiaNMQWhIRlZMLwzZRUlJEJDU6zh80NaGZ98rm2+Ke572Oz3nnnPfumWvNFw68d8/vnO/v9z3n/M49991nkvg/Y+lCOzAXZvY0cA0wLeldzzbrgNWFS59J+tWLUFKlCjABCJj0tH8UqLk2At4GzJfvKr9xqSbMbBOwD1juLu2StFUB6/qKFcAF/yF58DslbQvtp4oCtBw9Mxvk4uB3SNoeQ1a5JNgKLvgPyIPfLmlnbH/eApjZ3S3s/wSOS6rFOuNw2RlgZpuBveTBb5O0qz02/+x8hjzTXq7MApPAfmBt5C5wgia7ALAZqBd4nu/IrhPg2GkPAeaK8VYnBAAeKwT/D/BMp7bdkBzQmJozwAtz6pYA3a4MAvcBBmw1s8OSdkfwAGBmQ8AeoMtd+kjSOwH9tWDzH5lTzrmzHrZPAOcb9sDSAJ4x124SGCIf+WIZ6tQMCBHgpK8Azn644PCaCAHqheDrwO5Cf78DfZ0QIOQ+IPTU9GPh880RPF2uTJON+BbgfVd3PfCemS0J9KkJm//ITBE2Az519n8D3QE8x8lH+izwYKGuh3yGCHgt5RKY9BUA6HWBCzgY5FAuwAywukn9RrIdprEjbEwlQOOUdg64fU65A7gXeAjY4UZOwFFgVaAAx1zbiXls3ijMgglgZQoBxuGSbDxf+Rq4IdghPwGWA98VuD4n4AhcLGUmwVXAy2bWE9iuJZ+kOvAU2e4AMAC8EkNiTtHWhmZjZNm8BjQ7eV0H3ES2JAaAZe76EWBA0pQnzyhwK9kM6G1h+xLwpvt6Htgg6SsfnguImJo+SbAP+Jh8iu4N4Bl1bcY9bI1s+jd4RoGesnLAqK8Azn4FeeKcBe4M5Dnhad9LdmPUEGFfJXKApHPAQffVgDUl8YwDzxUuPW5mL/q2jzkMheCPwufQp0/efJL2uOcVjbxTn8++iLIFeKDQ9kBEe29I+iGmXWlLwMyeJbs5Ajgs6VQgT4zgwYiZAWZmNzap7yLL/reR7dGDhbrhOPfKR4wAjezui2Hg9QD7pChrCdSA74EtwJPyvdu6mKeyS6AGvNqkvgb8DPwE/CZptk3fkiBGgLraeA4fwVcqyjwMxSIVD1BNAZKiygIsLoEUqKIASfmqLEASVFGAxSWQkq/KAiRBFQVIehaoogBJUUUBFpNgSr4qC5AEVRRgMQmmRJUFqOwjsY7DzFYAjwD9wC1l8TTDgghgZsuA9WQB9wNryV61S45kApjZPeQBbwCuLZPPF6UJYGZ95AH3AytD2qdCxwQws27gYbJgB4C74t1qzdcpRAtgZl3AOrJg+4H7WaB13A5iBLjazD4heyOs1TpuB8dK7PsCYgToAjaV4MsU8AXZq/YjksZK4LgEC3kfME32BskIWdBHAn9D7AhSCjALfIMbYeCQpL/a7LNtlC3AUfIRPiDpTEQfpSJEAJ9fe0+TreMRYL98/725gGh3BtSBQ+TT+tsr5WfxBkIFENk7uo1p/aWkmTIcS4WQV2XXA79IOlmuS2nhLcB/Ff8CcYWgkYr2kKAAAAAASUVORK5CYII=" />
 <style>
   body {
     font-family: 'Playfair Display', serif;
-    font-size: 130%;
+    font-size: 110%;
     margin: 0;
     background-color:#fff;
   }
@@ -22,10 +23,14 @@
     font-family: lato, sans-serif;
     font-weight: 900;
     margin: 1.3em 0 0.1em;
+    text-align: left;
   }
   h1 { 
-   font-size: 3.5em;
    margin-top:0;
+  }
+  @media screen and (min-width: 400px) {
+   body { font-size: 130%; }
+   h1 { font-size: 3.5em; }
   }
 	.cover-image {
 		max-width: 36%;
